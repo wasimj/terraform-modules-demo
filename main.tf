@@ -5,13 +5,13 @@ provider "aws" {
 }
 
 module "example" {
-  source = "modules/"
+  source = "./modules/" 	# https://github.com/hashicorp/terraform/issues/19745
 
   name = "New server 1"
 }
 
 module "example2" {
-  source = "modules/"
+  source = "./modules/"
 
   name = "New server 2"
 }

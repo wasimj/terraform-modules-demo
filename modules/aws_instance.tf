@@ -3,7 +3,7 @@ resource "aws_instance" "example" {
   instance_type = "${lookup(var.instance_type, "large")}"
   key_name      = "DevopsKeyPair"
 
-  tags {
+  tags = {
     Name        = "${var.name}"
   }
 
