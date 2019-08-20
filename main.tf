@@ -7,11 +7,9 @@ provider "aws" {
 module "example" {
   source = "./modules/" 	# https://github.com/hashicorp/terraform/issues/19745
 
-  name = "New server 1"
+  name = "${random_pet.server.id}"
 }
 
-module "example2" {
-  source = "./modules/"
+resource "random_pet" "server" {
 
-  name = "New server 2"
 }
