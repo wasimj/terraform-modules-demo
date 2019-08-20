@@ -13,3 +13,4 @@ module "example" {
 resource "random_pet" "server" {
 
 }
+# https://www.terraform.io/docs/providers/random/r/pet.html
