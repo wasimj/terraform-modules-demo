@@ -15,15 +15,3 @@ module "example2" {
 
   name = "New server 2"
 }
-
-# resource "aws_instance" "example2" {
-#   ami           = "${var.ami}"
-#   instance_type = "${lookup(var.instance_type, "small")}"
-#   key_name      = "DevopsKeyPair"
-
-#   tags {
-#     Name        = "Intro to DevOps Web Server 1"
-#   }
-
-#   user_data = "${data.template_file.init.rendered}"
-# }
